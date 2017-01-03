@@ -1,0 +1,100 @@
+@charset "UTF-8";
+
+ul#album-fotos{
+    width: 700px;   /*largura*/
+    margin: 0 auto; /*margem 0 na esquerda e automático para todas as outtras*/
+    padding: 50px;  /*borda um pouco maior*/
+    overflow: hidden; /*esconde os pontos*/
+    list-style: none;  /*faz parte do overflow*/
+}
+
+ul#album-fotos li{
+    float:left ; /*cada item fica a esqueda do outro sem ficar um abaixo do outro*/
+    width: 200px; /*largura*/
+    height: 200px; /*altura*/
+    margin: 10px; /*espaço de dentro*/
+    border: 5px solid #ffffff; /*solida preta de 5px da borda*/
+    background-color: #ffffff;/*configurar dentro de cada foto*/
+    box-shadow: 1px 1px 3px rgba(0,0,0,.4); /*sobra na caixa de 1px lateral, 1px vertical, 3px de espalhamento e uma cor rgba*/
+    -webkit-transition: all .4s ease-in; /*amplia a imagem de forma lenta*/
+}
+
+ul#album-fotos li span{
+    opacity: 0; /*esconde a legenda da foto(se for 0 ele tira e se for 11 ele aparece)*/
+    color: #ffffff;/*cor da fonte*/
+    text-shadow: 1px 1px 1px #000000; /*sombras de um px e sendo preto*/
+    background-color: rgba(0,0,0,.3); /*preto meio tranparente*/
+    font-size: 9pt;/*tamnaho da fonte*/
+    line-height: 370px;/*para legenda descer*/
+    padding: 5px;; /*ametar a largura do fundo*/
+}
+ul#album-fotos li:hover{/*quando passar o mouse por cima irá dá um zoom por inteiro part2*/
+    -webkit-transform: scale(1.5); /*efeito do zoom ampliando grossseiramente maximizado*/
+
+}
+ul#album-fotos li:hover span{ /*toda vez que pasar i mouse por cima é para aparecer a legenda*/
+    opacity: 1;
+
+}
+
+ul#album-fotos li#foto-01{
+    background: url("../imagens/galeria-01.jpg") no-repeat;
+    background-position:50% 50% ; /*parte do meio*/
+    background-size: 400px 400px ; /*tamanho original da img 400px*/
+    background-color: #ffffff;
+}
+ul#album-fotos li#foto-01:hover{/*zoom quando passar o mouse afastando a img*/
+    background-position: 0px 0px; /*volta amortar  parte de cima da tela*/
+    background-size: 200px 200px; /*volta a 200px X 200px*/
+}
+ul#album-fotos li#foto-02{
+    background: url("../imagens/galeria-02.jpg") no-repeat;
+    background-position:50% 50% ; /*parte do meio*/
+    background-size: 400px 400px ; /*tamanho original da img 400px*/
+    background-color: #ffffff;
+}
+ul#album-fotos li#foto-02:hover{/*zoom quando passar o mouse afastando a img*/
+    background-position: 0px 0px; /*volta amortar  parte de cima da tela*/
+    background-size: 200px 200px; /*volta a 200px X 200px*/
+}
+ul#album-fotos li#foto-03{
+    background: url("../imagens/galeria-03.jpg") no-repeat;
+    background-position:50% 50% ; /*parte do meio*/
+    background-size: 400px 400px ; /*tamanho original da img 400px*/
+    background-color: #ffffff;
+}
+ul#album-fotos li#foto-03:hover{/*zoom quando passar o mouse afastando a img*/
+    background-position: 0px 0px; /*volta amortar  parte de cima da tela*/
+    background-size: 200px 200px; /*volta a 200px X 200px*/
+}
+ul#album-fotos li#foto-04{
+    background: url("../imagens/galeria-04.jpg") no-repeat;
+    background-position:50% 50% ; /*parte do meio*/
+    background-size: 400px 400px ; /*tamanho original da img 400px*/
+    background-color: #ffffff;
+}
+ul#album-fotos li#foto-04:hover{/*zoom quando passar o mouse afastando a img*/
+    background-position: 0px 0px; /*volta amortar  parte de cima da tela*/
+    background-size: 200px 200px; /*volta a 200px X 200px*/
+}
+ul#album-fotos li#foto-05{
+    background: url("../imagens/galeria-05.jpg") no-repeat;
+    background-position:50% 50% ; /*parte do meio*/
+    background-size: 400px 400px ; /*tamanho original da img 400px*/
+    background-color: #ffffff;
+}
+ul#album-fotos li#foto-05:hover{/*zoom quando passar o mouse afastando a img*/
+    background-position: 0px 0px; /*volta amortar  parte de cima da tela*/
+    background-size: 200px 200px; /*volta a 200px X 200px*/
+}
+ul#album-fotos li#foto-06{
+    background: url("../imagens/galeria-06.jpg") no-repeat;
+    background-position:50% 50% ; /*parte do meio*/
+    background-size: 400px 400px ; /*tamanho original da img 400px*/
+    background-color: #ffffff;
+}
+ul#album-fotos li#foto-06:hover{/*zoom quando passar o mouse afastando a img*/
+    background-position: 0px 0px; /*volta amortar  parte de cima da tela*/
+    background-size: 200px 200px; /*volta a 200px X 200px*/
+}
+
